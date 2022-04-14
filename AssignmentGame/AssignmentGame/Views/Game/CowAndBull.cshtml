@@ -1,0 +1,33 @@
+﻿@model AssignmentGame.Models.Game
+@{
+    ViewBag.Title = "CowAndBull";
+}
+
+<h2>CowAndBull</h2>
+
+<html>
+<head>
+
+</head>
+<body>
+    <div>
+        <form action="checkNumber" method="post">
+            <input type="text" name="Number" placeholder="Enter 4 Digit Number" />
+            <input type="submit" value="Submit" />
+        </form>
+        @Html.ValidationSummary()
+    <table>
+        <tr>
+            <th>Cow</th>
+            <th>Bull</th>
+        </tr>
+        <tr>
+            <th>@ViewBag.Cow</th>
+            <th>@ViewBag.Bull</th>
+        </tr>
+    </table>
+        
+    </div>
+</body>
+</html>
+
